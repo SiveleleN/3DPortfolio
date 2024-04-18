@@ -1,3 +1,4 @@
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
@@ -7,69 +8,42 @@ import useAlert from "../hooks/useAlert";
 import { Alert, Loader } from "../components";
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const { alert, showAlert, hideAlert } = useAlert();
-  const [loading, setLoading] = useState(false);
-  const [currentAnimation, setCurrentAnimation] = useState("idle");
+  const [loading, setIsLoading] = useState(false);
+  
 
-  const handleChange = ({ target: { name, value } }) => {
-    setForm({ ...form, [name]: value });
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value});
   };
-
-  const handleFocus = () => setCurrentAnimation("walk");
-  const handleBlur = () => setCurrentAnimation("idle");
-
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setCurrentAnimation("hit");
+       e.preventDefault();
+       setIsLoading(true);
+       setCurrentAnimation("hit");
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: "Thank you for your message 😃",
-            type: "success",
-          });
+    emailjs.send(
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: "Sivelele",
+        from_email: form.email,
+        to_email: 'sivelelenkamane29@gmail.com',
+        message: form.message
+      },
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+    ).then(() => {
+      setIsLoading(false);
+      // TODO: Show success message
+      // TODO: Hide an alert
 
-          setTimeout(() => {
-            hideAlert(false);
-            setCurrentAnimation("idle");
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-          setCurrentAnimation("idle");
-
-          showAlert({
-            show: true,
-            text: "I didn't receive your message 😢",
-            type: "danger",
-          });
-        }
-      );
-  };
+      setForm({ name: '', email: '', message: ''})
+    }).catch((error) =>{
+       setIsLoading(false);
+       console.log(error);
+       // TODO: Show error message
+    })
+    
 
   return (
     <section className='relative flex lg:flex-row flex-col max-container'>
@@ -89,7 +63,7 @@ const Contact = () => {
               type='text'
               name='name'
               className='input'
-              placeholder='John'
+              placeholder='Sivelele'
               required
               value={form.name}
               onChange={handleChange}
@@ -103,7 +77,7 @@ const Contact = () => {
               type='email'
               name='email'
               className='input'
-              placeholder='John@gmail.com'
+              placeholder='sivelelenkamane29@gmail.com'
               required
               value={form.email}
               onChange={handleChange}
@@ -117,7 +91,7 @@ const Contact = () => {
               name='message'
               rows='4'
               className='textarea'
-              placeholder='Write your thoughts here...'
+              placeholder='How can I help you.....'
               value={form.message}
               onChange={handleChange}
               onFocus={handleFocus}
@@ -132,7 +106,7 @@ const Contact = () => {
             onFocus={handleFocus}
             onBlur={handleBlur}
           >
-            {loading ? "Sending..." : "Submit"}
+            {loading ? "Sending..." : "Sending Message"}
           </button>
         </form>
       </div>

@@ -2,17 +2,17 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
 
 import sakura from "../assets/sakura.mp3";
-import { HomeInfo, Loader } from "../components";
-import { soundoff, soundon } from "../assets/icons";
-import { Bird, Island, Plane, Sky } from "../models";
-
+import Island from '../models/Island';
+import Sky from '../models/Sky';
+import Plane from '../models/Plane'
+import HomeInfo from '../components/Loader'
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
 
-  const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
+  const [currentStage, setCurrentStage] = useState(1);
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
   useEffect(() => {
@@ -88,10 +88,10 @@ const Home = () => {
           <Bird />
           <Sky isRotating={isRotating} />
           <Island
+            position={islandPosition}
             isRotating={isRotating}
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
-            position={islandPosition}
             rotation={[0.1, 4.7077, 0]}
             scale={islandScale}
           />
