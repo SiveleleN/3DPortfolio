@@ -10,20 +10,11 @@ import {
     html,
     javascript,
     linkedin,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
     nodejs,
     pricewise,
-    react,
-    redux,
-    sass,
     snapgram,
     summiz,
-    tailwindcss,
     threads,
-    typescript
 } from "../assets/icons";
 
 export const skills = [
@@ -53,69 +44,45 @@ export const skills = [
         type: "Frontend",
     },
     {
+        imageUrl: bootstrap,
+        name: "Bootstrap",
+        type: "Frontend"        
+    },
+    {
+        imageUrl: figma,
+        name: "Figma",
+        type: "Design Tool"
+       
+    },
+    {
         imageUrl: javascript,
         name: "JavaScript",
         type: "Frontend",
     },
     {
-        imageUrl: mongodb,
-        name: "MongoDB",
+        imageUrl: mysql,
+        name: "MySQL",
         type: "Database",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
+        imageUrl: vuejs,
+        name: "Vue.js",
+        type: "Frontend"
     },
     {
         imageUrl: nodejs,
         name: "Node.js",
         type: "Backend",
     },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
 ];
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Full Stack Web Developer",
+        company_name: "Life Choices",
+        icon: lifechoices,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "April 2024 - Current",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -124,16 +91,16 @@ export const experiences = [
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Customer Service Consultant",
+        company_name: "Capfin SA PTY LTD",
+        icon: capfin,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "March 2019 - Feb 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Take calls",
+            "Deal with customer queries",
+            "Inform customers about their products of the loan",
+            "Maintain good client relationship"
         ],
     },
     {
@@ -149,18 +116,28 @@ export const experiences = [
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
+];
+
+export const education = [
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
+        institution: "University of Web Development",
+        degree: "Bachelor of Science in Web Development",
+        date: "2018 - 2022",
+    }
+];
+
+export const reviews = [
+    {
+        reviewer: "John Doe",
+        position: "Senior Developer",
+        company: "Tech Solutions Inc.",
+        testimonial: "Sivelele is an exceptional developer. His attention to detail and problem-solving skills make him a valuable asset to any team. He consistently delivers high-quality code and is always willing to go the extra mile to ensure project success.",
+    },
+    {
+        reviewer: "Jane Smith",
+        position: "Product Manager",
+        company: "Innovate Tech",
+        testimonial: "I had the pleasure of working with Sivelele on a complex web project. His expertise in frontend and backend development was evident throughout the project lifecycle. He communicates effectively, meets deadlines, and exceeds expectations. I highly recommend him for any web development role.",
     },
 ];
 
@@ -173,12 +150,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/SiveleleN',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'www.linkedin.com/in/sivelele-nkamane-10336a271',
     }
 ];
 
@@ -186,43 +163,51 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
+        name: 'Capstone Full Stack Eco',
         description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        LiveUrl: 'https://capstone-5f5db.web.app/',
+        GithubUrl: 'https://github.com/SiveleleN/Capston_Project'
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
+        name: 'Netflix',
         description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        LiveUrl: 'https://voluble-panda-b81de2.netlify.app/',
+        GithubUrl: 'https://github.com/SiveleleN/Netflix'
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
+        name: 'Ecommerce',
         description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        LiveUrl: 'https://candid-unicorn-aaf34a.netlify.app/',
+        GithubUrl: 'https://github.com/SiveleleN/e-commerceSite'
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'Temperature Converter',
+        description: 'Created a temperature converter',
+        LiveUrl: 'https://peppy-melba-17c508.netlify.app/',
+        GithubUrl: 'https://github.com/SiveleleN/Temperature-'
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Calculator',
+        description: 'Created a function calculator using JavaScrip',
+        LiveUrl: 'https://thunderous-empanada-e719eb.netlify.app/',
+        GithubUrl: 'https://github.com/SiveleleN/Calc-and-keyboard'
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        name: 'BIM Calculator',
+        description: `Stay organized and productive with our intuitive to-do list app. Easily create, edit, and delete tasks, customize your to-do list with priority levels, due dates, and categorization, and stay up-to-date across devices. Say goodbye to forgotten tasks and hello to productivity today.
+                     write it in a form where I was the one who created this app`,
+        LiveUrl: 'https://dulcet-scone-2c3a23.netlify.app/',
+        GithubUrl: 'https://github.com/SiveleleN/bmiCal'
     }
 ];
+

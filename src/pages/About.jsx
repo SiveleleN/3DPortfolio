@@ -1,10 +1,6 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { CTA } from "../components";
-import { experiences, skills } from "../constants";
+import { skills, experiences } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -15,15 +11,17 @@ const About = () => {
         Hello, I'm{" "}
         <span className='blue-gradient_text font-semibold drop-shadow'>
           {" "}
-          Adrian
+          Sivelele Nkamane
         </span>{" "}
         👋
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Croatia, specializing in technical
-          education through hands-on learning and building applications.
+        As a Full Stack Development student at Life Choice's Academy, born on March 31, 1998, I'm passionate about continuous growth in technology. 
+        Lifelong learning, collaboration, and mentorship drive my journey in this ever-evolving field. With a focus on innovative solutions and staying updated with industry trends, I bring punctuality, adaptability, analytical thinking, and assertiveness to my work. 
+        Valuing diversity and meaningful relationships, I foster an inclusive approach to problem-solving. 
+        Excited about the endless possibilities in technology, I'm eager to network with like-minded individuals.
         </p>
       </div>
 
@@ -50,7 +48,7 @@ const About = () => {
         <h3 className='subhead-text'>Work Experience.</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
+            I've worked with all these companies, leveling up my skills and
             teaming up with smart people. Here's the rundown:
           </p>
         </div>
