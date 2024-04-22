@@ -1,17 +1,17 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState } from "react";  // Importing useRef and useState from react
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useRef, useState } from "react";
+import { Suspense } from "react";  // Remove duplicate imports of useRef and useState
 
 import { Fox } from "../models";
-import useAlert from "../hooks/useAlert";
+import useAlert from "../hook/useAlert";
 import { Alert, Loader } from "../components";
 
 const Contact = () => {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setIsLoading] = useState(false);
-  const [currentAnimation, setCurrentAnimation] = useState('idle')
+  const [currentAnimation, setCurrentAnimation] = useState('idle');
 
   const { alert, showAlert, hideAlert} = useAlert();
   const handleChange = (e) => {
@@ -56,7 +56,7 @@ const Contact = () => {
   const handleBlur = () => setCurrentAnimation('idle')
   
   return (
-    <section className='relative flex lg:flex-row flex-col max-container'>
+    <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
       {alert.show && <Alert {...alert} />}
 
       <div className='flex-1 min-w-[50%] flex flex-col'>
@@ -154,5 +154,4 @@ const Contact = () => {
   );
 };
 
-
-export default Contact
+export default Contact;

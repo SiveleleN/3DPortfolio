@@ -5,7 +5,8 @@ import sakura from "../assets/sakura.mp3";
 import Island from '../models/Island';
 import Sky from '../models/Sky';
 import Plane from '../models/Plane'
-import HomeInfo from '../components/Loader'
+import HomeInfo from '../components/HomeInfo'
+import Bird from '../models/Bird'
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
   audioRef.current.volume = 0.4;
@@ -107,9 +108,9 @@ const Home = () => {
       <div className='absolute bottom-2 left-2'>
         <img
           src={!isPlayingMusic ? soundoff : soundon}
-          alt='jukebox'
-          onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+          alt='sound'
           className='w-10 h-10 cursor-pointer object-contain'
+          onClick={() => setIsPlayingMusic(!isPlayingMusic)}
         />
       </div>
     </section>

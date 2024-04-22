@@ -38,3 +38,4 @@ export function Bird() {
     </mesh>
   );
 }
+export default Bird;
