@@ -27,7 +27,7 @@ const Projects = () => {
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className='btn-front rounded-xl flex justify-center items-center'>
                 <img
-                  src={project.iconUrl}
+                  src={project.imageUrl}
                   alt='threads'
                   className='w-1/2 h-1/2 object-contain'
                 />

@@ -1,20 +1,14 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { bmi, calc, capstone, ecom, neflix, temp, aza, brand, candice, matt, seth, thy } from "../assets/images/";
 import {
-    car,
     contact,
     css,
-    estate,
     express,
     git,
     github,
     html,
     javascript,
     linkedin,
-    nodejs,
-    pricewise,
-    snapgram,
-    summiz,
-    threads,
+    nodejs
 } from "../assets/icons";
 
 export const skills = [
@@ -103,41 +97,57 @@ export const experiences = [
             "Maintain good client relationship"
         ],
     },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
 ];
 
 export const education = [
     {
-        institution: "University of Web Development",
-        degree: "Bachelor of Science in Web Development",
-        date: "2018 - 2022",
+        institution: "Life Choices Academy",
+        course: "Full Stack Developer",
+        date: "2023 - 2024",
+    },
+    {
+        institution: "Luvumelwano S S S",
+        course: "Nation Senior Certificate",
+        date: "2016",
     }
 ];
 
 export const reviews = [
     {
-        reviewer: "John Doe",
-        position: "Senior Developer",
-        company: "Tech Solutions Inc.",
-        testimonial: "Sivelele is an exceptional developer. His attention to detail and problem-solving skills make him a valuable asset to any team. He consistently delivers high-quality code and is always willing to go the extra mile to ensure project success.",
+        imageUrl: matt,
+        theme: 'btn-back-red',
+        name: "Matthew Dean Brown",
+        testimonial: "Sivelele has left me impressed by her dedication and creativity. She will complete any project she attempts to the best of her ability. Sivelele will always strive to give her best."
     },
     {
-        reviewer: "Jane Smith",
-        position: "Product Manager",
-        company: "Innovate Tech",
-        testimonial: "I had the pleasure of working with Sivelele on a complex web project. His expertise in frontend and backend development was evident throughout the project lifecycle. He communicates effectively, meets deadlines, and exceeds expectations. I highly recommend him for any web development role.",
+        imageUrl: candice,
+        theme: 'btn-back-red',
+        name: "Candice Amon",
+        testimonial: "Sivelele was a pleasure to work with because she always lightened the mood during challenging projects with her sense of humor. She dedicated herself to completing every task to the highest standard. Her honesty and ownership of her work were refreshing to see. She persevered through obstacles and consistently sought out opportunities to grow both personally and professionally. Her positive attitude and exceptional work ethic are sure to bring success wherever she goes. I highly recommend Sivelele for any future endeavors. If you require further information, please don't hesitate to contact me."
+    },
+    {
+        imageUrl: seth,
+        theme: 'btn-back-red',
+        name: "Seth Tobias",
+        testimonial: "Sivelele is an amazingly hardworking individual. She puts her all into the task at hand. She often loses her temper due to frustration. However, she doesn't let it stop her from completing the task at hand. It also showcases how much passion she has to complete the tasks she set her mind on. Outside of work, Sivelele is a very friendly and is easy to talk to. Sivelele would be an amazing asset to any organization."
+    },
+    {   
+        imageUrl: thy,
+        theme: 'btn-back-red',
+        name: "Tyhiesha Johnson",
+        testimonial: "Sivelele has great spirit when it comes to perseverance. She's an amazing leader and team player, while remaining modest and calm. She brings light into our day and helps whenever she can. She'll make a great addition to any team of her choice."
+    },
+    {
+        imageUrl: brand,
+        theme: 'btn-back-red',
+        name: "Brandon Roustone",
+        testimonial: "Sivelele's relentless passion for software development is truly admirable. Her unwavering commitment to refining her skills and becoming proficient in various coding languages is incredibly inspiring. She tackles tasks with a unique creative perspective, combining a sharp eye for both design and functionality. Her dedicated approach serves as a beacon for those seeking to master the craft of software development."
+    },
+    {   
+        imageUrl: aza,
+        theme: 'btn-back-red',
+        name: "Azasiphe Ndoro",
+        testimonial: "Sivelele's relentless passion for software development is truly admirable. Her unwavering commitment to refining her skills and becoming proficient in various coding languages is incredibly inspiring. She tackles tasks with a unique creative perspective, combining a sharp eye for both design and functionality. Her dedicated approach serves as a beacon for those seeking to master the craft of software development."
     },
 ];
 
@@ -161,51 +171,50 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        imageUrl: capstone,
         theme: 'btn-back-red',
         name: 'Capstone Full Stack Eco',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
+        description: 'I am thrilled to have created a full-stack website as my latest project. It is a true testament to the power of hard work, determination, and creativity. The website is a shining example of how we can turn our ideas into reality and make a positive impact on the world around us.',
         LiveUrl: 'https://capstone-5f5db.web.app/',
         GithubUrl: 'https://github.com/SiveleleN/Capston_Project'
     },
     {
-        iconUrl: threads,
+        imageUrl: neflix,
         theme: 'btn-back-green',
         name: 'Netflix',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
+        description: 'I successfully cloned this website as part of a task where we were required to replicate Netflix and make it live.',
         LiveUrl: 'https://voluble-panda-b81de2.netlify.app/',
         GithubUrl: 'https://github.com/SiveleleN/Netflix'
     },
     {
-        iconUrl: car,
+        imageUrl: ecom,
         theme: 'btn-back-blue',
         name: 'Ecommerce',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
+        description: 'This project was a true test of my abilities, but I embraced the challenge and persevered.',
         LiveUrl: 'https://candid-unicorn-aaf34a.netlify.app/',
         GithubUrl: 'https://github.com/SiveleleN/e-commerceSite'
     },
     {
-        iconUrl: snapgram,
+        imageUrl: temp,
         theme: 'btn-back-pink',
         name: 'Temperature Converter',
-        description: 'Created a temperature converter',
+        description: "I have created a temperature converter.",
         LiveUrl: 'https://peppy-melba-17c508.netlify.app/',
         GithubUrl: 'https://github.com/SiveleleN/Temperature-'
     },
     {
-        iconUrl: estate,
+        imageUrl: calc,
         theme: 'btn-back-black',
         name: 'Calculator',
-        description: 'Created a function calculator using JavaScrip',
+        description: 'I have created a fully functioning calculator.',
         LiveUrl: 'https://thunderous-empanada-e719eb.netlify.app/',
         GithubUrl: 'https://github.com/SiveleleN/Calc-and-keyboard'
     },
     {
-        iconUrl: summiz,
+        imageUrl: bmi,
         theme: 'btn-back-yellow',
         name: 'BIM Calculator',
-        description: `Stay organized and productive with our intuitive to-do list app. Easily create, edit, and delete tasks, customize your to-do list with priority levels, due dates, and categorization, and stay up-to-date across devices. Say goodbye to forgotten tasks and hello to productivity today.
-                     write it in a form where I was the one who created this app`,
+        description: 'I have created a BIM calculator here as a short task that was given.',
         LiveUrl: 'https://dulcet-scone-2c3a23.netlify.app/',
         GithubUrl: 'https://github.com/SiveleleN/bmiCal'
     }
