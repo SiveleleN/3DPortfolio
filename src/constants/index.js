@@ -8,7 +8,9 @@ import {
     html,
     javascript,
     linkedin,
-    nodejs
+    nodejs,
+    
+    bootstrap
 } from "../assets/icons";
 
 export const skills = [

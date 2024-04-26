@@ -1,5 +1,14 @@
-export { Sky } from "./Sky";
-export { Bird } from './Bird';
-export { Plane } from "./Plane";
-export { Island } from "./Island";
-export { Fox } from "./Fox";
+import { Sky } from "./Sky";
+import { Bird } from './Bird';
+import { Plane } from "./Plane";
+import { Island } from "./Island";
+import { Fox } from './Fox'
+
+
+export {
+    Sky,
+    Bird,
+    Plane,
+    Island,
+    Fox
+}

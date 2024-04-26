@@ -1,15 +1,30 @@
-import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
+import aza from './aza.png'
+import brand from './brand.png'
+import seth from './seth.png'
+import matt from './matt.png'
+import candice from './candice.png'
+import thy from './thy.png'
 import logo from './logo.svg'
+import bmi from './bmi.png'
+import calc from './calc.png'
+import capstone from './capstone.png'
+import ecom from './ecom.png'
+import temp from './temp.png'
+import neflix from './neflix.png'
+
 
 export {
-    hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
-    logo
+    aza,
+    matt,
+    brand,
+    seth,
+    candice,
+    thy,
+    logo,
+    bmi,
+    calc,
+    capstone,
+    ecom,
+    temp,
+    neflix
 }
